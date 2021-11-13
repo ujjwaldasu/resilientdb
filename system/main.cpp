@@ -16,6 +16,7 @@
 #include "timer.h"
 #include "chain.h"
 #include "smart_contract_txn.h"
+#include "logger_wrapper.h"
 
 void network_test();
 void network_test_recv();
@@ -30,6 +31,7 @@ void parser(int argc, char *argv[]);
 
 int main(int argc, char *argv[])
 {
+    logInfo("Main Method Logging Test" );
     // 0. initialize global data structure
     parser(argc, argv);
 #if SEED != 0
